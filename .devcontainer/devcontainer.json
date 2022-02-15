@@ -1,0 +1,22 @@
+{
+	"name": "thesis-dev",
+	"build": {
+		"dockerfile": "Containerfile.debian",
+		"args": { "VARIANT": "latest" }
+	},
+
+	"settings": {},
+
+	"extensions": [
+		"editorconfig.editorconfig",
+		"james-yu.latex-workshop"
+	],
+
+	"remoteUser": "vscode",
+
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
+	"workspaceFolder": "/workspace",
+
+	"runArgs": ["--userns=keep-id", "--name=thesis-dev"],
+	"containerUser": "vscode"
+}
