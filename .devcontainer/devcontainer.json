@@ -5,7 +5,11 @@
 		"args": { "VARIANT": "latest" }
 	},
 
-	"settings": {},
+	"settings": {
+		"latex-workshop.bibtex-fields.order": ["true"],
+		"latex-workshop.chktex.enabled": true,
+		"latex-workshop.latex.autoBuild.run": "onSave"
+	},
 
 	"extensions": [
 		"editorconfig.editorconfig",
