@@ -2,7 +2,11 @@
 	"name": "thesis-dev",
 	"build": {
 		"dockerfile": "Containerfile.debian",
-		"args": { "VARIANT": "latest" }
+		"args": {
+			"USER_UID": "1000",
+			"USERNAME": "vscode",
+			"VARIANT": "latest"
+		}
 	},
 
 	"settings": {
